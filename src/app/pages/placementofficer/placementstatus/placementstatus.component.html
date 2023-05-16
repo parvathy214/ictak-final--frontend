@@ -1,0 +1,40 @@
+
+      <app-placementheader></app-placementheader>
+      <div class="screen" style="background-image: url('../../assets/bg1.webp');background-size: cover;" >
+
+        <div class="container">
+          <div class="row justify-content-center mt-2 pt-5  ">
+              <div class="col-6">
+                  <form  [formGroup]="addplacementstatusForm" >
+
+                    <h5 style="text-align: center;color: rgb(150, 143, 143);">UPDATE PLACEMENT STATUS</h5>
+
+                    <div class="mb-3">
+                      <label for="formGroupExampleInput" class="form-label">Learner Id</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput"formControlName="learnerid"  >
+                    </div>
+                    <div class="mb-3">
+                      <label for="formGroupExampleInput2" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput2" formControlName="name"   >
+                    </div>
+
+
+
+                    <div class="mb-3">
+                      <label for="formGroupExampleInput" class="form-label">Placement Status</label>
+                      <select class="form-select" aria-label="Default select example"formControlName="placementstatus">
+                        <option selected></option>
+                        <option value="Placed">Placed</option>
+                        <option value="Job Seeking">Job Seeking</option>
+                        <option value="Not Intrested">Not Intrested</option>
+                      </select>
+                    </div>
+                   <br>
+                    <button type="submit" class="btn btn-primary" (click)="addstatusplacement()">Submit</button>
+
+                  </form>
+              </div>
+
+          </div>
+        </div>
+        </div>
